@@ -34,6 +34,10 @@ export default{
     .barra-pesquisa{
         padding: 10px;
         width: 80%;
+        appearance: none;
+        border:none;
+        outline: none;
+        background: none;
         
     }
     .botao-pesquisar{
@@ -41,6 +45,9 @@ export default{
         background-color: #411530;
         color: white;
         margin-left: 5x;
+        border:none;
+        outline: none;
+      
     }
     .bloco-pesquisa{
         display: flex;

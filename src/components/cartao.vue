@@ -1,7 +1,7 @@
 <template>
 <div class="cartao">
 <h2 class="lugar">{{localizacao}}</h2>
-<img src={{imagem}} alt="imagem" class="imagem">
+<img :src= imagem alt="imagem" class="imagem">
 
 
 <div class="temperatura">
@@ -27,15 +27,15 @@ export default{
                 required: false
             },
             imagem: {
-                type: Image,
+                type: String,
                 required: false
             },
             maximo: {
-                type: String,
+                type: Number,
                 required: false
             },
             minimo: {
-                type: String,
+                type: Number,
                 required: false
             }
     }
@@ -52,8 +52,16 @@ export default{
     width: 300px;
     height: 350px;
     color: white;
-    border-radius: 5px;
     margin-right: 10px;
+
+    /* From https://css.glass */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
    
 }
 .lugar{
